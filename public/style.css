@@ -168,3 +168,120 @@ ul li a.active {
 }
 
 /*Header CSS:End*/
+
+/*Kids Section CSS:Start */
+
+.section-kids-learning {
+    padding: 16px var(--padding-x-sm-big);
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.section-kids-learning h1 {
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 700;
+    /* line-height: 54px; */
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: var(--primary_txt_color);
+    margin-bottom: 16px;
+}
+
+.section-kids-learning .kids-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.kids-container .kids-card {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.kids-card .kids-card-back {
+    width: 200px;
+    height: 210px;
+    border-radius: 12px;
+    background: var(--card_color);
+    padding: 7px;
+}
+
+.kids-card .kids-card-front {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    width: 256px;
+    height: 144px;
+    border: 1px solid red;
+}
+
+.kids-card  .kids-card-back h3 {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #002863;
+}
+
+/* ToDo: Add Parent CSS Selector on each for Kids sections */
+.outer-circle {
+    width: 44px;
+    /* Outer circle size */
+    height: 44px;
+    background-color: #F5EAE2;
+    /* Adjust this color to match the outer circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+    transform: rotateX(180deg);
+}
+
+.inner-circle {
+    width: 36px;
+    /* Inner circle size */
+    height: 36px;
+    background-color: #002e5d;
+    /* Adjust this color to match the inner circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-icon {
+    width: 36px;
+    /* Adjust this size to match the arrow size */
+    height: 36px;
+}
+
+/* Wave-line CSS:Start */
+
+.wave-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wave-line .wave-img {
+    width: 120px;
+    height: 9px;
+}
+
+.wave-line .wave-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Wave-line CSS:End */
+
+
+/*Kids Section complete*/
