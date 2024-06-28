@@ -16,7 +16,7 @@ const BookingSchema = new mongoose.Schema({
   },
   language: {
     type: String,
-    enum: ['english', 'hindi'], // Allowed language options
+    enum: ['English', 'Hindi'], // Allowed language options
     required: true
   }
 });

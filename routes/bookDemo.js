@@ -4,6 +4,7 @@ const Booking = require('../models/Booking'); // Import the Booking model
 const router = express.Router();
 
 router.post('/', async (req, res) => { 
+
     try {
         const { name, email, phone, language } = req.body;
     
@@ -22,10 +23,10 @@ router.post('/', async (req, res) => {
         const booking = new Booking({ name, email, phone, language });
         await booking.save();
     
-        res.status(201).json({ message: 'Booking successful!' });
+        res.status(201).json({ status: true, message: 'Booking successful!' });
     } catch (err) {
         console.error('Error creating booking:', err);
-        res.status(500).json({ message: 'Internal server error.' });
+        res.status(500).json({ status: false, message: 'Internal server error.' });
     }
 });
 

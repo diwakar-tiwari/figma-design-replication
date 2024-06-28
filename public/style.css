@@ -285,3 +285,300 @@ ul li a.active {
 
 
 /*Kids Section complete*/
+
+/*Parents start*/
+
+.parents-container {
+    margin: 16px 0;
+    padding: 16px var(--padding-x-sm);
+}
+
+.parents-container .content-header {
+    padding: 0 calc(var(--padding-x-sm-big) - var(--padding-x-sm));
+}
+
+/* ToDO: make the common code into the same selector h1,h2.. */
+.parents-container .content-header h1 {
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 700;
+    /* line-height: 46px; */
+    letter-spacing: -0.04em;
+    text-align: center;
+    margin-bottom: 14px;
+
+}
+
+.parents-container .content-header h2 {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 34px; */
+    letter-spacing: -0.04em;
+    text-align: center;
+    padding: 2px;
+}
+
+.parents-container .content-header h1 p {
+    font-family: DM Sans;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+}
+
+.parents-container .parents-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.parents-container .parents-btn .btn-outline {
+    width: 115px;
+    border-radius: 8px;
+    height: 54px;
+    border: 1px solid var(--btn_color);
+    background-color: var(--color-white);
+}
+
+/* Icon Section CSS:Start */
+
+
+.icon-section .icon-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.icon-contents .icon-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+
+.icon-contents .icon-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+}
+
+.icon-contents .icon-item p {
+    margin-right: 2px;
+}
+
+/*Call To Action*/
+.cta-container {
+    background: #5A40C4;
+    padding: 6%;
+    /* width: 1366px; */
+    height: 267px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-container p {
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    height: 130px;
+    /* line-height: 32px; */
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: var(--color-white);
+
+}
+
+.cta-container button {
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 700;
+    /* line-height: 26px; */
+    letter-spacing: -0.04em;
+    text-align: center;
+    background-color: var(--btn_color);
+    color: #fff;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 100%;
+}
+
+/* carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.carousel .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-container .carousel-item {
+
+    min-width: 80%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container .carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-item p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(255 255 255);
+    border: none;
+    color: #ff3f4e;
+    font-size: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*Book demo form*/
+.open-form-button {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-popup {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.form-header h2 {
+    margin: 0;
+    color: white;
+    background-color: #6200ea;
+    padding: 10px 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.form-header p {
+    margin: 10px 0 20px 0;
+    color: #ff7043;
+}
+
+.form-header .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.demo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.demo-form input,
+.demo-form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-input select {
+    width: 25%;
+}
+
+.phone-input input {
+    width: 75%;
+}
+
+.apply-button {
+    background-color: #ff7043;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    background-color: #ff5722;
+}
+
+.form-footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.form-footer a {
+    color: #ff7043;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
