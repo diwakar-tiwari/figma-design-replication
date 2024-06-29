@@ -225,7 +225,6 @@ ul li a.active {
     transform: translate(-50%, -80%);
     width: 258px;
     height: 144px;
-    border: 1px solid red;
 }
 
 .kids-card .kids-card-back h3 {
@@ -238,7 +237,6 @@ ul li a.active {
     color: #002863;
 }
 
-/* ToDo: Add Parent CSS Selector on each for Kids sections */
 .outer-circle {
     width: 44px;
     /* Outer circle size */
@@ -564,7 +562,7 @@ button:focus {
 }
 
 .apply-button {
-    background-color: #ff7043;
+    background-color: var(--btn_color);
     color: white;
     padding: 10px;
     border: none;
@@ -583,7 +581,7 @@ button:focus {
 }
 
 .form-footer a {
-    color: #ff7043;
+    color: var(--btn_color);
     text-decoration: none;
 }
 
@@ -671,20 +669,12 @@ button:focus {
     text-decoration: underline;
 }
 
-.footer-social {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
+
 
 .footer-social a {
     margin: 0 10px;
 }
 
-.footer-social img {
-    width: 30px;
-    height: 30px;
-}
 
 .footer-bottom {
     display: flex;
@@ -709,11 +699,14 @@ button:focus {
     text-decoration: underline;
 }
 
+.footer-links{
+    flex-direction: column-reverse;
+}
 
 
 
 
-/* CSS For Tablet Size screen */
+/* CSS For Tablet and Desktop Size screen */
 
 @media screen and (min-width: 768px) {
 
@@ -721,6 +714,8 @@ button:focus {
     a {
         font-size: 16px;
     }
+
+    /* Header CSS start */
     .header-section{
         height: 250px;
     }
@@ -733,6 +728,9 @@ button:focus {
     .header-content h2 {
         font-size: 24px;
     }
+
+    
+    /* Header CSS end */
 
     .section-kids-learning h1 {
         font-size: 36px;
@@ -823,7 +821,7 @@ button:focus {
     width: 60%;
     color: var(--primary_txt_color);
     }
-
+/* Call to action (cta) */
     .cta-container{
         height: 190px;
         flex-direction: row;
@@ -838,5 +836,27 @@ button:focus {
     }
     .cta-container button{
         width: 200px;
+    }
+
+    /*Footer*/
+    .footer-container{
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .footer-links{
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .footer-column h3{
+        font-family: DM Sans;
+        font-size: 20px;
+    }
+    .footer-column ul li a{
+        font-family: DM Sans;
+        font-size: 16px;
+    }
+    .footer-bottom{
+        font-family: DM Sans;
+        font-size: 16px;
     }
 }
