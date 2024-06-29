@@ -125,7 +125,7 @@ ul li a.active {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 0 var(--padding-nav-sm);
+    padding: 0 var(--padding-x-sm);
     margin: 8px 0;
 }
 
@@ -135,6 +135,10 @@ ul li a.active {
 
 
 /* Nav Menu bar for small screen:end */
+
+
+/* Nav Bar CSS Start */
+
 
 /*Header CSS:start */
 
@@ -200,6 +204,11 @@ ul li a.active {
     position: relative;
     top: 0;
     left: 0;
+    min-width: 258px;
+    min-height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .kids-card .kids-card-back {
@@ -207,7 +216,6 @@ ul li a.active {
     height: 210px;
     border-radius: 12px;
     background: var(--card_color);
-    padding: 7px;
 }
 
 .kids-card .kids-card-front {
@@ -215,12 +223,12 @@ ul li a.active {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -80%);
-    width: 256px;
+    width: 258px;
     height: 144px;
     border: 1px solid red;
 }
 
-.kids-card  .kids-card-back h3 {
+.kids-card .kids-card-back h3 {
     font-family: DM Sans;
     font-size: 16px;
     font-weight: 700;
@@ -367,6 +375,7 @@ ul li a.active {
 .icon-contents .icon-item p {
     margin-right: 2px;
 }
+
 
 /*Call To Action*/
 .cta-container {
@@ -581,4 +590,175 @@ button:focus {
 
 .form-footer a:hover {
     text-decoration: underline;
+}
+
+
+/*Footer */
+.footer {
+    background-color: #5a32b5;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* CSS For Tablet Size screen */
+
+@media screen and (min-width: 768px) {
+
+    /* Global CSS */
+    a {
+        font-size: 16px;
+    }
+
+    .header-content h2 {
+        font-size: 24px;
+    }
+
+    .header-content h2 {
+        font-size: 40px;
+    }
+
+    .section-kids-learning h1 {
+        font-size: 36px;
+    }
+
+    .kids-card-back h3 {
+        font-size: 20px;
+    }
+
+    .d-sm-none {
+        display: block !important;
+    }
+
+    .d-md-none {
+        display: none !important;
+    }
+
+    .nav-container .logo {
+        width: 30%;
+    }
+
+    .nav-container .nav-links {
+        width: 70%;
+    }
+
+    .nav-links ul {
+        justify-content: space-between;
+    }
+
+
+    .section-kids-learning .kids-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .kids-container .kids-card {
+        width: 258px;
+        margin: 16px 0;
+        min-width: 258px;
+    }
+
+    .outer-circle {
+        transform: rotateZ(90deg);
+    }
 }
