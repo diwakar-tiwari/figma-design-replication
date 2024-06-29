@@ -37,9 +37,11 @@ UpTodd is a web application designed to help parents book demo sessions for thei
    git clone <repository-url>
 
 2. Install the dependencies.
+    ```bash
     npm install
 
 3. Create a .env file in the root directory and add the following environment variables:
+    ```bash
     PORT=3000
     MONGODB_URI=<your-mongodb-uri>
 
