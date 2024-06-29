@@ -57,10 +57,10 @@ UpTodd is a web application designed to help parents book demo sessions for thei
 
 ## Frontend
 
-# Static Files
+## Static Files
 - All static files (HTML, CSS, JavaScript) are served from the public directory.
 
-# HTML Structure
+### HTML Structure
 - Navigation Bar: Contains links to various sections and a button to book a demo session.
 - Header Section: Displays a title and a subtitle.
 - Kids Learning Section: Highlights various developmental milestones for children.
@@ -71,10 +71,10 @@ UpTodd is a web application designed to help parents book demo sessions for thei
 - Testimonial Section: Provides a brief testimonial.
 - Footer: Contains links to company information, community resources, and program details.
 
-# CSS
+### CSS
 - The project uses style.css for general styling and temp.css for temporary or additional styles.
 
-# JavaScript
+### JavaScript
 - The project uses script.js for handling interactions like opening and closing the demo booking form.
 
 
