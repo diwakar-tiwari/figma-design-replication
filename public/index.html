@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- Responsive -->
@@ -15,11 +16,14 @@
     <!-- Font Awesome icons CDN -->
     <script src="https://kit.fontawesome.com/b8afffe50a.js" crossorigin="anonymous"></script>
 
-    <!--External CSS file  -->
+    <!--  -->
     <link href="style.css" rel="stylesheet" type="text/css" />
 
-    <title>UpTodd</title>
+    <!-- TODO: Remove this.... -->
+    <link href="temp.css" rel="stylesheet" type="text/css" />
+    <title>UpTodd Assignment</title>
 </head>
+
 <body>
     <!-- Navigation bar -->
     <nav class="nav-bar" id="nav-bar">
@@ -32,13 +36,17 @@
 
             <div class="nav-links">
                 <ul>
-                    <li class="d-sm"><a href="#" class="btn-primary">Book a Free Demo</a></li>
-                    <li class="d-sm d-md-none link-menu-icon"><i class="fas fa-bars"></i></li>
+                    <li class="d-sm-none"><a href="#" class="active">Home</a></li>
+                    <li class="d-sm-none"><a href="#">Programs</a></li>
+                    <li class="d-sm-none"><a href="#">Success Story</a></li>
+                    <li class="d-sm-none"><a href="#">About</a></li>
+                    <li class="d-sm"><a href="#" class="btn-primary" id="open-form-button">Book a Free Demo</a></li>
+                    <li class="d-sm d-md-none link-menu-icon" id="menu-btn-toggle"><i class="fas fa-bars"></i></li>
                 </ul>
             </div>
         </div>
 
-        <div class="nav-links d-sm-none  nav-links-sm">
+        <div class="nav-links d-sm-none d-md-none nav-links-sm" id="nav-menu-link-sm">
             <ul>
                 <li class="d-md"><a href="#" class="active">Home</a></li>
                 <li class="d-md"><a href="#">Programs</a></li>
@@ -48,67 +56,14 @@
             </ul>
         </div>
     </nav>
-
     <!-- Header Section -->
     <header class="header-section">
         <div class="header-content">
-            <h2>UpTodd Careers</h2>
+            <!-- TODO: Change Your content -->
+            <h2>Achievers</h2>
             <h1>Real Stories:Watch Babies Thrive</h1>
         </div>
     </header>
-
-    <!-- Kids Learning Section -->
-    <section class="section-kids-learning section-container" id="section-kids-learning">
-        <h1>Developmental Wonders: Early Learning Made Fun</h1>
-
-        <div class="kids-container">
-            <div class="kids-card">
-                <div class="kids-card-back">
-                    <h3>2 Months &
-                        Crawling!</h3>
-                </div>
-                <div class="kids-card-front">
-                    <img src="assets/images/kids-img.svg" alt="">
-                </div>
-            </div>
-
-            <div class="outer-circle">
-                <div class="inner-circle">
-                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path fill="white" d="M12 2L3 12h7v8h4v-8h7L12 2z" />
-                    </svg>
-                </div>
-            </div>
-
-            <div class="kids-card">
-                <div class="kids-card-back">
-                    <h3>10Months &
-                        Recognising Objects</h3>
-                </div>
-                <div class="kids-card-front">
-                    <img src="assets/images/kids-img.svg" alt="">
-                </div>
-            </div>
-
-            <div class="outer-circle">
-                <div class="inner-circle">
-                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path fill="white" d="M12 2L3 12h7v8h4v-8h7L12 2z" />
-                    </svg>
-                </div>
-            </div>
-
-            <div class="kids-card">
-                <div class="kids-card-back">
-                    <h3>18Months &
-                        Reading Pictures</h3>
-                </div>
-                <div class="kids-card-front">
-                    <img src="assets/images/kids-img.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Kids Learning Section -->
     <section class="section-kids-learning section-container" id="section-kids-learning">
@@ -169,6 +124,7 @@
         </div>
     </div>
 
+<!-- Parents Section -->
     <section class="parents-container section-container ">
         <div class="content-header">
             <h1>Happy Parents, Thriving Tots: <p>Witnessing Their Child's Growth</p>
@@ -179,24 +135,7 @@
             <!-- ToDo: Add Card View images here... -->
             <div class="carousel section-container">
                 <div class="carousel-container">
-                    <div class="carousel-item">
-                        <img src="assets/images/parents.png" alt="Image 1">
-                        <p>Audio visual technology is creating a difference and has become a positive routine</p>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="aassets/images/parents.png" alt="Image 2">
-                        <p>Audio visual technology is creating a difference and has become a positive routine</p>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="assets/images/parents.png" alt="Image 3">
-                        <p>Audio visual technology is creating a difference and has become a positive routine</p>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/parents.png" alt="Image 3">
-                        <p>Audio visual technology is creating a difference and has become a positive routine</p>
-                    </div>
+                    
                     <div class="carousel-item">
                         <img src="assets/images/parents.png" alt="Image 3">
                         <p>Audio visual technology is creating a difference and has become a positive routine</p>
@@ -241,7 +180,9 @@
 
 
     <div class="carousel section-container">
+        <h2>Brilliant Minds: <span> Celebrating Global Baby Champions </span></h2>
         <div class="carousel-container">
+            
             <div class="carousel-item">
                 <img src="assets/images/slider-img.svg" alt="Image 1">
                 <p>UpTodd's Little Genius identified 416 Flashcards within 10 Minutes</p>
@@ -268,11 +209,20 @@
     </div>
 
     <section class="cta-container flex section-container">
-        <p>Imagine what your child can achieve! Explore personalized development <br />
-            that strengthens neural connections and builds a strong foundation for their future.</p>
+        <p>Imagine what your child can achieve! Explore personalized development that strengthens neural connections and builds a strong foundation for their future.</p>
 
         <button>Start Now</button>
     </section>
+
+    <!-- Testimonial section -->
+    <div class="testimonial">
+        <div class="content">
+            <p>Started with passion to create global impact, creating real success stories in families across globe</p>
+        </div>
+        <div class="testimonial-img">
+            <img src="assets/images/testimonial.svg" alt="">
+        </div>
+    </div>
 
     <section>
         <div id="form-popup" class="form-popup">
@@ -306,8 +256,6 @@
         </div>
     </section>
 
-    <!-- Footer Section-->
-     
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
@@ -345,5 +293,8 @@
             <a href="#">Terms and Conditions</a>
         </div>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
+
 </html>
